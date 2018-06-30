@@ -1,0 +1,24 @@
+#header{
+    height: 32px;
+    background: #FF0036;
+}
+
+body a, .wrapper span{
+    font-size: 12px;
+    color: #ffff;
+}
+
+a:hover{
+    color: #FF0036;
+}
+#login-info{
+    float:left;
+}
+#quick-menu{
+    float: right;
+}
+#quick-menu .menu{
+    float: left;
+    margin: 0 10px;
+
+}
