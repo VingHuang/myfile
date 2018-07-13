@@ -1,20 +1,21 @@
-/*通用样式*/
+/* 通用的样式 */
+
+/* 样式重置 */
 *{
     margin: 0;
     padding: 0;
 }
-ul {
+
+li{
     list-style: none;
 }
+
 a{
     text-decoration: none;
 }
 
 .wrapper{
-    height: 32px;
     width: 1230px;
-    margin:0 auto;
-    line-height: 32px;
-
+    height: 100%;
+    margin: 0 auto;
 }
-

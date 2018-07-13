@@ -1,24 +1,225 @@
+/* index.html 的样式 */
+
+
+/* header 开始 */
 #header{
     height: 32px;
-    background: #FF0036;
-}
-
-body a, .wrapper span{
+    background: #f2f2f2;
+    /*background: #cccccc; 注释*/
     font-size: 12px;
-    color: #ffff;
+    line-height: 32px; /* 单行文字垂直居中：行高=高度 */
+    border-bottom: 1px solid #e5e5e5;
 }
 
-a:hover{
-    color: #FF0036;
-}
 #login-info{
-    float:left;
+    float: left;
 }
+
 #quick-menu{
     float: right;
 }
+
 #quick-menu .menu{
     float: left;
-    margin: 0 10px;
-
+    /*background: #222;*/
+    position: relative;
+    padding: 0 14px;
+    height: 33px;
 }
+
+#header a, #login-info span{
+    color: #999;
+}
+
+#header a{
+    /*padding: 0 14px;*/
+}
+
+
+
+#header a:hover{
+    color: #FF0036;
+}
+
+#header .triangle::after{
+    content: '';
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #bbb;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    width: 0;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -2px;
+
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    transform-origin: 3px 1.5px;
+}
+
+#header .icon-gouwuchekong,.icon-shouji,.icon-daohang{
+    font-size: 12px;
+    color: #FF0036;
+}
+
+#login-info .register{
+    padding: 0;
+}
+
+#header .triangle:hover::after{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+#header .triangle{
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 1px 0 1px;
+}
+
+#header .triangle:hover{
+    background-color: #fff;
+    border-color: #e5e5e5;
+    cursor: pointer;
+}
+
+#header .triangle:hover > a{
+    text-decoration: underline;
+    color: #FF0036;
+}
+
+#header .triangle:hover .submenu{
+    display: block;
+}
+
+#quick-menu .submenu a:hover{
+    text-decoration: underline;
+}
+
+#quick-menu .submenu{
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    width: 80px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 0 1px 1px 1px;
+    padding: 0 14px;
+    display: none;
+}
+
+#quick-menu .split{
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+    padding: 0;
+    margin: 9px 5px;
+}
+
+#quick-menu .qr-code{
+    width: 175px;
+    height: 227px;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    top: 28px;
+    left: -58px;
+    background: #fff;
+    box-shadow: 0 0 5px #aaa;
+    display: none;
+}
+
+#quick-menu .qr-code::after{
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    left: 85px;
+}
+
+#quick-menu .mobile:hover .qr-code{
+    display: block;
+}
+
+#header .triangle .submenu2{
+    position: absolute;
+    top: 32px;
+    left: -167.5px;
+    width: 220px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 0 1px 1px 1px;
+    padding: 0 14px;
+    display: none;
+}
+
+#header .triangle:hover .submenu2{
+    display: block;
+}
+#header .triangle .submenu2 a{
+    margin: 20px;
+}
+
+#header .triangle .submenu3{
+    position: absolute;
+    top: 32px;
+    left: -1156.7px;
+    width: 1230px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 0 1px 1px 1px;
+    padding: 0 14px;
+    display: none;
+}
+#header .triangle:hover .submenu3{
+    display: block;
+}
+
+#header .nav-all{
+    margin:0px 0px 0px 20px;
+    width: 1230px;
+    height: 220px;
+}
+#header .nav-all a{
+    margin:0px 15px 0px 0px;
+}
+#header .tag{
+    margin-bottom:10px;
+}
+#header .nav-1{
+    width:30%;
+    height: 140px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-right: 1px solid #cccccc;
+}
+
+#header .nav-2{
+    width:30%;
+    height:180px;
+    float: right;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+/* header 结束 */
