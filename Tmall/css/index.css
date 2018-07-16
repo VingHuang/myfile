@@ -122,6 +122,7 @@
     padding: 0 14px;
     display: none;
     background: #fff;
+    z-index: 999;
 
 }
 
@@ -143,6 +144,7 @@
     background: #fff;
     box-shadow: 0 0 5px #aaa;
     display: none;
+    z-index: 999;
 }
 
 #quick-menu .qr-code::after{
@@ -155,6 +157,7 @@
     position: absolute;
     top: -10px;
     left: 85px;
+
 }
 
 #quick-menu .mobile:hover .qr-code{
@@ -172,6 +175,7 @@
     padding: 0 14px;
     display: none;
     background: #fff;
+    z-index: 999;
 }
 
 #header .triangle:hover .submenu2{
@@ -192,6 +196,7 @@
     padding: 0 14px;
     display: none;
     background: #fff;
+    z-index: 999;
 }
 #header .triangle:hover .submenu3{
     display: block;
@@ -392,9 +397,10 @@
     color: #FF0036;
     background-color: white;
 }
-#banner .banner-nav-list a:hover{
+#banner .banner-nav-list li:hover a{
     color: #ff0036;
 }
+
 
 #banner .banner-nav-img1
 {
@@ -524,21 +530,136 @@
 }
 
 #hot-band .band-item {
-    width: 112px;
+    width: 123px;
     height: 90px;
-    padding: 0px 5px 0px 5px;
+    /*padding: 0px 5px 0px 5px;*/
     border: 0.5px solid #e5e5e5;
-    background-image: url("../img/band-item-1.webp");
-    background-repeat: no-repeat;
-    background-position: center;
     float: left;
+    position: relative;
 }
-#hot-band .band-item img:hover{
-    opacity:0.5;
-    filter:alpha(opacity=50);
+#hot-band .band-bg{
+    width: 100px;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 20%;
+    position: absolute;
 }
-#hot-band .band-item img{
-    width: 122px;
+#hot-band .band-hidden{
+    width: 123px;
     height: 90px;
+    background-color:rgba(0,0,0,0.8);
+    position: absolute;
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 90px;
+    opacity: 0;
+    transition: opacity 0.9s ease;
 }
+#hot-band .band-name{
+    width: 112px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+#hot-band .band-enter{
+    display:inline;
+    background: #ff0036;
+    border-radius:7px;
+    color: #e5e5e5;
+    font-size: 14px;
+}
+#hot-band .band-item:hover .band-hidden{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#hot-band .band-item-last{
+    width: 123px;
+    height: 90px;
+    border: 0.5px solid #e5e5e5;
+    float: left;
+    position: relative;
+}
+#hot-band .band-refresh{
+    width: 123px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left:50px ;
+
+}
+#hot-band .icon-iconset0344{
+    display: block;
+    height: 20px;
+    font-size: 20px;
+    color: #999;
+    width: 20px;
+}
+#hot-band .band-name-last{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+#hot-band .band-item-last a{
+    color: #999;
+}
+#hot-band .band-item-last:hover{
+    color: white;
+    background: #ff0036;
+}
+#hot-band .band-item-last:hover a{
+    color: white;
+}
+#hot-band .band-item-last:hover i{
+    color: white;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
 /*hot-band结束*/
+
+
+/*side-bar开始*/
+#side-bar{
+    background: #000;
+    color: #fffdef;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+}
+#side-bar .side-bar-gouwuche{
+    width: 30px;
+    height: 96px;
+    background: #ff0036;
+    margin-top: 240px;
+    text-align: center;
+    height: 96px;
+    position: relative;
+}
+#side-bar .vip{
+    width: 130px;
+    height: 35px;
+    background: #494949;
+    color: #e5e5e5;
+    position: absolute;
+    right: 40px;
+    bottom: 698px;
+    text-align: center;
+    line-height: 35px;
+    opacity: 0;
+}
+#side-bar .side-bar-triangle:after{
+    content: '';
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent transparent transparent #494949;
+    width: 0;
+    position: absolute;
+    right: -15px;
+    top: 30%;
+}
+#side-bar:hover .vip{
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+/*side-bar结束*/
