@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<script>
+    //3-1   闰年
+    //var x = Math.random();
+    // var y = Math.random();
+    // console.log(x);
+    // console.log(y);
+    //     x<y?console.log(y):console.log(x)
+    //
+    //3-2
+    // var today = new Date();
+    // var year = today.getFullYear();
+    // console.log(year);
+    // if( year%4==0 && year%100!=0){
+    //     console.log('是');
+    // }else if(year%400==0){
+    //     console.log('是');
+    // }else{
+    //     console.log('不是');
+    // }
+
+    //4-11.编写程序．通过用户输入的年龄判断是哪个年龄段的
+    // 人（儿童：年龄＜14；青少年：14<=年龄＜24；青年：24<年龄＜40;
+    // 中年：40＜=年龄＜60; 老年：年龄>=60），并在页面上输出判断结果。
+    // var age = window.prompt();
+    // function foo (age){}{
+    //     if (age >= 60){
+    //         console.log("老年人");
+    //     }else if(age >40){
+    //         console.log("中年人");
+    //     }else if(age > 24 ){
+    //         console.log("青年");
+    //     }else if(age >14 ){
+    //         console.log("青少年");
+    //     }else{
+    //         console.log("儿童");
+    //     }
+    // }
+    // foo();
+
+    //4-2
+    //     var date = window.prompt();
+    //     function foo(date) {
+    //         if (date<6 &&date>0){
+    //         switch (date) {
+    //             case "0":
+    //                 alert('7');
+    //                 break;
+    //             case "1":
+    //                 alert('1');
+    //                 break;
+    //             case "2":
+    //                 alert('2');
+    //                 break;
+    //             case "3":
+    //                 alert('3');
+    //                 break;
+    //             case "4":
+    //                 alert('4');
+    //                 break;
+    //             case "5":
+    //                 alert('5');
+    //                 break;
+    //             case "6":
+    //                 alert('6');
+    //                 break;
+    //         }
+    //     }else{
+    //             alert('错误')
+    //         }
+    //     }
+    //     foo(date);
+
+
+    //4-3   10！阶乘
+    //         var n = window.prompt()
+    //          function foo(n){
+    //              if(n==0 || n==1){
+    //                  return 1;
+    //              }else{
+    //                  return foo(n-1)*n;
+    //              }
+    //          }
+    //         console.log(foo(n));
+
+    //4-4   1!+2!+......+10!=?
+    //     var n = window.prompt();
+    //     function foo(x) {
+    //         if (x==0 || x==1){
+    //             return 1;
+    //         } else{
+    //             return foo(x-1)*x;
+    //         }
+    //     }
+    //     function fn(n) {
+    //         var sum=0;
+    //         for(;n>0;n--)
+    //         {
+    //            sum+=foo(n);
+    //         }return sum;
+    //     }
+    //     fn(n);
+    //     console.log(fn(n));
+
+    //4-5   直角三角形
+    //     function f() {
+    //         for (var i = 1;i <=5;i++) {
+    //             for (var j = 1; j <= i; j++) {
+    //                 document.write(' ' + j);
+    //             }
+    //             document.write("<br>")
+    //         }
+    //
+    //     }
+    //     f();
+
+    //4-6  等腰三角形
+    // function f() {
+    //     for (var i = 1;i <=5 ;i++){
+    //         for (var k=1;k<=5-i;k++){
+    //             document.write("&nbsp;")
+    //         }
+    //         for (var j = 1;j <= i; j++){
+    //             document.write(" "+"*");
+    //         }
+    //         document.write("<br>");
+    //     }
+    // }
+    // f();
+
+    //4-7 /*7.有一个三位数x，被4除余2，被7除余3，被9除余5，请求出这个数。*/
+    // function f() {
+    //     for (var n = 100; n < 999; n++) {
+    //         if ((n - 2) % 4 == 0 && (n - 3) % 7 == 0 && (n - 5) % 9 == 0) {
+    //             document.write(n+" ");
+    //         }
+    //     }
+    // }
+    // f();
+    // console.log(f());
+
+    /*4-8.求所有满足条件的四位数ABCD，它是13的倍数，且第3位数加上第2位数等于第4位数（
+        即：A=B+C）
+    。（提示：对于四位数的整数x，通过Math.floor(x/1000)可求出第4位的数字，其他
+    位数的提取也类似） */
+    /*4311
+    * A= math.floor(x/1000);
+    * B=math.floor(x/100)%10;
+    * C=math.floor(x/10)%10;
+    * D=x%10
+    * */
+    // for (x=1000;x<9999;x++) {
+    //     if (Math.floor(x / 10) % 10 + Math.floor(x / 100) % 10 == Math.floor(x/1000)&&x%13==0) {
+    //         document.write(x+"<br>");
+    //     }
+    // }
+
+    /* 5-1  f(x) = 4x2+3x+2，*/
+    // var x=window.prompt();
+    // function sum (x){
+    //     return 4 * Math.pow(x,2) + 3 * x + 2
+    // }
+    // sum();
+    // console.log(sum(x));
+
+    /*5-2.编写一个函数Min(x,y)求出x,y这两个数中的最小值，要求x,y的值由用户通过提示对话框输入。
+    // * *
+    // var x=window.prompt(),y=window.prompt();
+    //
+    // function f(x,y) {
+    //      return Math.min(x,y);
+    // }
+    // console.log(f(x,y));
+
+/*3.编写一个判断某个非负整数是否能够同时被3,5,7整除的函数，
+然后在页面上输出1~1000之间所有能同时被3,5,7整除的整数，并要求每行显示6个这样的数。*/
+    function f() {
+
+        for (var x = 1,sum=0; x < 1000; x++) {
+            if (x > 0 && x % 5 == 0 && x % 7 == 0 && x % 3 == 0) {
+                document.write(x + ' ');
+                sum = sum + 1;
+                if (sum == 6) {
+                    document.write('<br>');
+                    sum = 0;
+                }
+            }
+        }
+    }
+    f();
