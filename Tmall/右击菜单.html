@@ -45,25 +45,23 @@
     </div>
     <script>
         var oMenu = document.getElementById("right-menu");
-        var aLi = oMenu.getElementsByTagName("li")
-        document.oncontextmenu = function(ev) {
-            ev = ev || window.event;
-            oMenu.style.display= "block";
-            oMenu.style.left = ev.clientX + 'px';
-            oMenu.style.top =ev.clientY + 'px';
+        var aLi = oMenu.getElementsByTagName("li");
+        document.oncontextmenu = function (ev) {
+            ev = ev|| window.event;
+            oMenu.style.display = "block";
+            oMenu.style.top = ev.clientY + "px";
+            oMenu.style.left = ev.clientX + "px";
             return false;
         }
-       document.onclick = function(){
-           oMenu.style.display = "none";
+        document.onclick = function () {
+            oMenu.style.display = "none";
         }
 
-        for (var i = 0;i < aLi.length ; i++){
+        for (var i = 0,len = aLi.length;i < len;i++){
             aLi[i].onclick = function () {
                 alert(this.innerHTML);
-            };
+            }
         }
-
-
     </script>
 </body>
 </html>
