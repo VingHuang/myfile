@@ -33,7 +33,7 @@
 </head>
 <body>
     <ul id="right-menu">
-        <li>菜单1</li>
+        <li><p>菜单1</p></li>
         <li>菜单2</li>
         <li>菜单3</li>
         <li>菜单4</li>
@@ -58,8 +58,8 @@
         }
 
         for (var i = 0,len = aLi.length;i < len;i++){
-            aLi[i].onclick = function () {
-                alert(this.innerHTML);
+            aLi[i].onclick = function (eve) {
+                alert(eve.target.innerHTML);
             }
         }
     </script>
