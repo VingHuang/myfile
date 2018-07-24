@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #youjiancaidan{
+            border: 1px solid #ccc;
+            padding: 10px 2px;
+            position: absolute;
+            background: #e4e4e4;
+            display: none;
+        }
+        #youjiancaidan ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #youjiancaidan ul li{
+            padding: 5px;
+            transition: all 0.2s;
+        }
+        #youjiancaidan li:hover{
+            color: #fff;
+            background: #1c00ff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+<!--(1)菜单选项一、弹出alert提示框，内容自拟
+(2)菜单选项二、提示用户是否离开本页面。
+(3)菜单选项三、跳转至百度搜索【页面中选中的内容】
+(4)菜单选项四、弹出提示框，用户【在提示框中输入内容】然后跳转至百度进行搜索-->
+
+
+
+
+<textarea name="" id="" cols="100" rows="30"></textarea>
+
+
+<div id="youjiancaidan">
+    <ul>
+        <li>咱俩去吃麻辣烫吧，6元一碗的那种</li>
+        <li>是否离开本页面</li>
+        <li>将页面中选中的内容去百度搜索</li>
+        <li>输入内容，然后去百度搜索</li>
+    </ul>
+</div>
+
+
+<script>
+    var youjiancaidan = document.querySelector('#youjiancaidan');
+    //禁用系统右键菜单
+    document.oncontextmenu = function (eve) {
+        return false;
+    };
+    //自定义右键菜单唤醒和关闭
+    document.onmouseup = function (eve) {
+        //event.button用来判断鼠标按下的是那个按键。
+        //在非IE下，左键0  中键1  右键2
+        //IE下，左键1 右键2 中键4
+        if(eve.button == 2){
+            youjiancaidan.style.left = eve.clientX+'px';
+            youjiancaidan.style.top = eve.clientY+'px';
+            youjiancaidan.style.display = 'block';
+        }else{
+            youjiancaidan.style.display = 'none';
+        }
+    };
+
+
+
+
+    //事件委托写法
+    youjiancaidan.onmousedown = function (eve) {
+        if(eve.target.innerText == '咱俩去吃麻辣烫吧，6元一碗的那种'){
+            setTimeout(function () {
+                alert('咱俩去吃麻辣烫吧，6元一碗的那种');
+            },10);
+        }else if(eve.target.innerText == '是否离开本页面'){
+            setTimeout(function () {
+                var result = confirm('是否离开本页面？');
+                if(result){
+                    window.close();
+                }
+            },10);
+        }else if(eve.target.innerText == '将页面中选中的内容去百度搜索'){
+            var result = document.getSelection().toString();
+            setTimeout(function () {
+                if(result){
+                    open('http://www.baidu.com/s?wd='+result);
+                }else{
+                    alert('啥东西都没选中，搜什么搜？');
+                }
+            },10);
+        }else if(eve.target.innerText == '输入内容，然后去百度搜索'){
+            setTimeout(function () {
+                var result = prompt('请在此输入搜索内容','frank');
+                if(result){
+                    open('http://www.baidu.com/s?wd='+result);
+                }else{
+                    alert('啥东西都没输入，搜什么搜？');
+                }
+            },10);
+        }else{
+            //do nothing
+        }
+        youjiancaidan.style.display = 'none';
+    };
+
+
+</script>
+
+
+
+
+</body>
+</html>
