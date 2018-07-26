@@ -3,8 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #small, #big{
+            width: 400px;
+            height: 400px;
+            float: left;
+            position: relative;
+        }
+        #marsk{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left:0;
+        }
+        #big{
+            overflow: hidden;
+            display: none;
+        }
+        #drag{
+            width: 200px;
+            height: 200px;
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
+        <div id="small">
+            <img src="1.jpg" alt="">
+            <div id="drag"></div>
+            <div id="marsk"></div>
+        </div>
+        <div id="big">
+            <img src="2.jpg" alt="">
+        </div>
+        
+    </div>
+
+
+        <script>
+            var oSmall = document.getElementById("small");
+            var oDrag = document.getElementById("drag");
+            var oBig = document.getElementById("big");
+            var oMarsk = document.getElementById("marsk");
+
+
+
+            oSmall.onmouseover = function () {
+                oDrag.style.display = "block";
+                oBig.style.display = "block";
+            }
+            oSmall.onmouseout = function () {
+                oDrag.style.display = "none";
+                oBig.style.display = "none";
+            }
+            oSmall.onmouseover = function (ev) {
+                ev = ev || window.event;
+                var top = ev.clientX - oDrag.offsetHeight /2
+            }
+
+
+        </script>
 </body>
 </html>
