@@ -4,302 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        #nav {
-            width: 23%;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            position: fixed;
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
-            opacity: 1;
-            visibility: visible;
-            transition: all 0.5s ease;
-            z-index: 999;
-            background: #fff;
-        }
-
-        #nav-fullcover {
-            width: 23%;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            position: fixed;
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.5s ease;
-            z-index: 999;
-            background: #fff;
-        }
-
-        .logo {
-            left: 3%;
-            position: absolute;
-            top: 3%;
-        }
-
-        #list {
-            width: 196px;
-            height: 35px;
-            position: absolute;
-            top: 5%;
-            left: 19%;
-        }
-
-        #list li {
-            float: left;
-            margin-right: 20px;
-            font-size: 16px;
-            transform: scale(1.2);
-
-        }
-
-        .pull-down {
-            float: right;
-            position: absolute;
-            right: 5%;
-            top: 5%;
-            cursor: pointer;
-        }
-
-        h2 {
-            position: absolute;
-            top: 46%;
-            left: 17%;
-        }
-
-        #footer {
-            position: absolute;
-            top: 55%;
-            left: 17%;
-        }
-
-        .span {
-            margin-right: 20px;
-        }
-
-        .slide{
-            width: 77%;
-            overflow: hidden;
-            float: left;
-            margin-left: 23%;
-
-        }
-
-        #img-content {
-            width: 2688px;
-            height: 393px;
-            float: left;
-            transition: transform .8s ease;
-
-        }
-
-        #img-content img {
-            width: 896px;
-            height: 393px;
-            float: left;
-        }
-
-        #box-contain {
-            background: #ff0000;
-            float: left;
-            width: 77%;
-            margin-top: 20px;
-            height: 230px;
-            position: relative;
-            margin-left: 23%;
-
-        }
-
-        #box-conatin1, #box-conatin2, #box-conatin3 {
-            float: left;
-            background: #000;
-            width: 30%;
-            height: 70%;
-            margin: 20px 10px;
-        }
-
-        #box-conatin1 {
-            margin-left: 30px;
-        }
-
-        #nav-fullcover .list-menu2 {
-            position: absolute;
-            top: 18%;
-            left: 18%;
-            font-size: 20px;
-            width: 250px;
-            height: 400px;
-            font-weight: bolder;
-            transform: scale(1.0);
-
-        }
-
-        #nav-fullcover #prev {
-            width: 30px;
-            height: 30px;
-        }
-
-        .list-menu2 ul:first-child {
-            margin: 0px 0px 20px 0px;
-            border-bottom: 1px solid #CCCCCC;
-        }
-
-        .list-menu2 ul {
-            border-bottom: 1px solid #CCCCCC;
-        }
-
-        .list-menu2 ul li {
-            margin: 8px;
-        }
-
-        .list-menu2-enroll {
-            position: absolute;
-            bottom: 18%;
-            left: 18%;
-            font-size: 19px;
-        }
-
-        #box-contain-2 {
-            background: #63a35c;
-            float: left;
-            width: 77%;
-            margin-top: 20px;
-            height: 300px;
-            position: relative;
-            margin-left: 23%;
-
-        }
-
-        .box-left {
-            float: left;
-            margin: 20px 20px 0px 160px;
-            width: 30%;
-            height: 250px;
-            clear: both;
-            background: #000;
-        }
-
-        .box-right {
-            float: left;
-            background: #dddddd;
-            width: 30%;
-            height: 250px;
-            margin: 20px 60px 0px 120px;
-        }
-
-        .box-center {
-            padding-left: 24px;
-            padding-right: 24px;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            height: 100%;
-        }
-
-        @media (max-width: 1024px) {
-            #nav {
-                width: 100%;
-                height: 150px;
-
-            }
-
-            #nav-fullcover {
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                z-index: 999;
-            }
-
-            .slide {
-                width: 100%;
-                margin-left: 0;
-                margin-top: 150px;
-            }
-
-            #img-content img {
-                width: 100%;
-            }
-
-            #footer {
-                margin-top: 30px;
-            }
-
-            #box-contain {
-                margin-left: 0;
-                width: 100%;
-            }
-
-            #box-contain div div {
-                width: 30%;
-            }
-
-            #box-contain-2 {
-                width: 100%;
-                margin-left: 0;
-            }
-
-            #box-contain-2 div div {
-                width: 30%;
-            }
-        }
-
-        @media (max-width: 920px) {
-            #nav {
-                width: 100%;
-                height: 150px;
-            }
-
-            #nav-fullcover {
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                z-index: 999;
-            }
-
-            #img-content {
-                width: 100%;
-            }
-
-            #img-content img {
-                width: 100%;
-            }
-
-            #footer {
-                margin-top: 30px;
-            }
-
-            #box-contain {
-                width: 100%;
-            }
-
-            #box-contain div div {
-                width: 25%;
-            }
-
-            #box-contain-2 {
-                width: 100%;
-            }
-
-            #box-contain-2 div {
-                margin: 0;
-                padding: 0;
-            }
-
-            #box-contain-2 div div {
-                width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="Starbucks.css">
     <script src="../../../../Downloads/jQuery练习/6_广告/1-豆瓣广告轮播/demo.js"></script>
 </head>
 <body>
@@ -359,23 +64,27 @@
 </div>
 <div class="slide">
     <div id="img-content">
-        <img src="img/slide-1.jpg" alt="">
+        <img src="img/slide-1.jpg" alt="" >
         <img src="img/slide-2.jpg" alt="">
         <img src="img/slide-3.jpg" alt="">
+        <img src="img/slide-1.jpg" alt="">
     </div>
 </div>
 
 <div id="box-contain">
     <div class="box-center">
-        <div id="box-conatin1"></div>
-        <div id="box-conatin2"></div>
-        <div id="box-conatin3"></div>
+        <div id="box-conatin1"><img src="img/box-img1.jpg" alt=""></div>
+        <div id="box-conatin2"><img src="img/box-img2.jpg" alt=""></div>
+        <div id="box-conatin3"><img src="img/box-img3.jpg" alt=""></div>
     </div>
 
 </div>
 <div id="box-contain-2">
     <div class="box-center">
-        <div class="box-left"></div>
+        <div class="box-left">
+            <p class="font-box-head">星享俱乐部</p>
+            <p class="font-box-content">开启您的星享之旅，星星越多、会员等级越高、</p><p class="font-box-content">好礼越丰富。</p>
+        </div>
         <div class="box-right"><img src="img/box-log.svg" alt=""></div>
     </div>
 
@@ -404,41 +113,48 @@
 
     //轮播图
     var clientW = document.body.clientWidth;
-    $('.slide').css('width', function(){
-        return 4 * clientW;
-    });
-    window.onresize = function(){
-        clientW = document.body.clientWidth;
-        $('.slide img').css({
-            width: clientW
+    var navClientw = document.getElementById('nav').clientWidth;
+        slideWith = clientW - navClientw;
+    console.log(clientW);
+    console.log(navClientw);
+    console.log(slideWith);
+        $('#img-content').css('width',function () {
+            return 4 * slideWith;
         });
-        $('.slide').css('width', function(){
-            return 4 * clientW;
-        });
-    };
 
-
+        $('#img-content img').css('width',function () {
+            return 1 * slideWith;
+        })
     var nowIndex = 1;
-    var speed = 1500;
-    var play = function(){
-        if(nowIndex == 4){
+    var play = function () {
+        if (nowIndex == 4) {
             nowIndex = 1;
-            $('.slide').css({
+            $('#img-content').css({
                 transition: 'none',
-                transform: 'translateX(0px)'
-            });
-            speed = 0;
-        }else{
-            $('.slide').css({
+                transform: 'translateX(0px)',
+            })
+        } else {
+            $('#img-content').css({
                 transition: 'transform .8s ease',
-                transform: 'translateX(-'+ clientW * (nowIndex++) +'px)'
-            });
-            speed = 1500;
+                transform: 'translateX(-' + slideWith * (nowIndex++) + 'px)'
+            })
         }
-        clearTimeout(timer);
-        timer = setTimeout(play, speed);
-    };
-    var timer = setTimeout(play, speed);
+    }
+    setInterval(play,1000);
+
+    //box:hover
+    $('#box-contain .box-center').children().on('mouseenter',function () {
+        $(this).css({transform:'translateY(-4px)',
+                    boxShadow:'0px 1px 2px 2px rgba(0, 0, 0, 0.10)'
+
+        });
+    }).on('mouseleave',function () {
+
+        $(this).css({transform:'translateY(4px)',
+            boxShadow:'0px 1px 2px 2px rgba(0, 0, 0, 0.10)'
+
+        });
+    })
 
 
 </script>
