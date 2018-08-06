@@ -1,0 +1,61 @@
+$color:color;
+$bac:background;
+$w:with;
+$h:height;
+$cos:#ff0035;
+#div1{
+    #{$bac}: #ffffff;
+}
+#div2{
+    background: #000;
+    #{$w}:200px;
+}
+#div3{
+    .aa{
+        #{$w}:200px;
+        .bb{
+            #{$h}:200px;
+        }
+    &:hover{
+        #{$color}:#fff;
+    }
+    }
+}
+
+@mixin xx($ww,$hh:200px){
+    width:$ww;
+    height:$hh;
+}
+#div4{
+    @include xx(200px,300px)
+}
+#div5{
+    @include xx(200px)
+}
+#div6{
+    @include xx($ww:100px);
+    .a{background: #000;}
+}
+#div7{
+    font-size: 18px;
+    @extend #div6;
+}
+
+@import 'base/common';
+/*zhushi*/
+/*! 这是一个强制注释 */
+
+@function foo($asd){
+    @if($asd<1){
+        @return #fff;
+    }@else if($asd>1){
+        @return #000;
+    }@else{
+        @return #ccc;
+    }
+}
+
+#div9{
+    background: foo(6);
+}
+

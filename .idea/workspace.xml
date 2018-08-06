@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tmall/移动端开发--响应式布局/Starbucks.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tmall/移动端开发--响应式布局/Starbucks.css" afterDir="false" />
-    </list>
+    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,7 +19,7 @@
           <file leaf-file-name="星巴克.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
+                <state relative-caret-position="17">
                   <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
                 </state>
               </provider>
@@ -82,6 +79,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="30" />
@@ -150,6 +150,7 @@
       <workItem from="1533181368580" duration="156000" />
       <workItem from="1533265965149" duration="601000" />
       <workItem from="1533277769366" duration="662000" />
+      <workItem from="1533369672405" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="0801">
       <created>1533111829337</created>
@@ -169,10 +170,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9400000" />
+    <option name="totallyTimeSpent" value="9438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="56" width="1400" height="757" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -204,6 +206,27 @@
     <option name="LAST_COMMIT_MESSAGE" value="0801" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/Starbucks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/解构.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -290,7 +313,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="17">
           <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
         </state>
       </provider>

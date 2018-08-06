@@ -1,0 +1,10 @@
+*{
+    background: #fff;
+}
+
+#div1{
+    width: 200px;
+    height: 200px;
+    background: #ff0036;
+    background-image: url(http://127.0.0.1:8081/images/6b0bd83e41b9e03c26f5ea9990e77861.png);
+}

@@ -1,0 +1,10 @@
+*{
+    background: #fff;
+}
+
+#div1{
+    width: 200px;
+    height: 200px;
+    background: #ff0036;
+    background-image: url(../images/nike.png);
+}
