@@ -33,21 +33,21 @@
     <div id="container">
             <div id="nav">
                 <ul>
-                    <li >名称：<input type="text" name="ids">
-                    价格：<input type="text" name="ids"> 
-                        <button @click="arrPush">添加</button>
+                    <li >名称：<input type="text"  v-model="productName">
+                    价格：<input type="text"  v-model.number="yuan"> 
+                        <button @click="add(list)">添加</button>
                     </li>
                     <li><input type="text">
                         <button> 查询</button>
                     </li>
                 </ul>
-            </div>
+         </div>
             <div>
                 <ul id="content">
                     <li @click="toogle(sList,index)" v-for="(sList,index) in list" :class="{red: sList.isRed}">
-                            <input type="checkbox"  name="item"><button @click="cancel(list,index)">X</button>{{sList.name}}<span>{{sList.cost}}</span>
+                            <input type="checkbox"  name="item"><button @click="cancel(list,index)">X</button>{{sList.name}}<span>{{sList.price}}</span>
                     </li> 
-                    <h4><button @click="clear()">删除选中</button>总价：{{count}} </h4> 
+                    <h4><button @click="clear(list)" >删除选中</button>总价：{{count}} </h4> 
                 </ul>
 
                 
@@ -57,23 +57,24 @@
     <script src="./vue.js"></script>
     <script>
       new Vue({
-            el: '#content',
+            el: '#container',
             data: {
+                productName:'',
+                yuan:null,
                 count:0,
                 list:[{
                      name:'衣服',
-                    cost:22,
+                    price:22,
                     isRed: false,
-                    index:0
                     },{
                         name:'裤子',
-                        cost:213,
+                        price:213,
                         isRed: false,
                         index:1
                    
                     },{
                         name:'裙子',
-                        cost:211,
+                        price:211,
                         isRed: false,
                         index:2
                     }
@@ -85,9 +86,9 @@
                     sList.isRed = !sList.isRed;
                     sList.isSelected = !sList.isSelected;
                     if(sList.isRed){
-                        this.count =  this.count + parseInt(sList.cost);
+                        this.count =  this.count + parseInt(sList.price);
                     }else if(sList.isRed==false){
-                        this.count = this.count - parseInt(sList.cost)
+                        this.count = this.count - parseInt(sList.price)
                     }
                 },
                 cancel(list,index){
@@ -95,16 +96,19 @@
                    list.splice(index,1);
                     
                 },
-                // arrPush(){
-                //     console.log("32");
-                //     list.push(item,cost);
-                // },
+                add(list){
+                    let obj={};
+                    obj.name = this.productName;
+                    obj.price = this.yuan;
+                    list.push(obj);
+                },
                 clear(list){
-                    
-                    
+                    console.log(list);
+                    for(let i in list.keys()){
+                       
+                    }
                     
                 }
-
             }
         });
         
