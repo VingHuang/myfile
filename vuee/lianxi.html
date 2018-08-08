@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{list-style: none;
+            margin:0px;
+            padding:0px;
+        }
+        #container{
+            width: 400px;
+            height: 600px;
+            background: #fff;
+            margin: 100px auto;
+        }
+        .red{
+            background: #ff0000;
+            color: #fff
+        }
+        #content span{
+            float: right;;
+        }
+  
+    </style>
+</head>
+<body>
+    <!-- <div id="div3">
+        <span v-bind:title="message">鼠标悬停几秒钟查看此处动态绑定的提示信息！</span>
+    </div> -->
+    <div id="container">
+            <div id="nav">
+                <ul>
+                    <li>名称：<input type="text">
+                    价格：<input type="text">
+                        <button>添加</button>
+                </li>
+                    <li><input type="text">
+                        <button> 查询</button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul id="content">
+                        <li @click="toogle(sList)" v-for="(sList) in list" :class="{red: sList.isRed}">
+                        {{sList.name}}<button>X</button><span>{{sList.cost}}</span>
+                    </li> 
+                    <h4>总价：</h4>
+                </ul>
+
+                
+            </div>
+    </div>
+  
+    <script src="./vue.js"></script>
+    <script>
+        new Vue({
+            el:"#content",
+            data:{
+                list:[
+                    {
+                        name:"衣服",
+                        cost:200,
+                        isRed:false
+                    },   {
+                        name:"裤子",
+                        cost:20,
+                        isRed:false
+                    },   {
+                        name:"裙子",
+                        cost:203,
+                        isRed:false
+                    }
+                ]
+            },
+          methods: {
+            toogle(sList){
+                sList.isRed = !sList.isRed;
+                console.log(sList);
+              }
+          }
+        })
+    </script>
+</body>
+</html>
