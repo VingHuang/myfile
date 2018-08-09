@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{list-style: none;
+            margin:0px;
+            padding:0px;
+        }
+        #container{
+            width: 400px;
+            height: 600px;
+            background: #fff;
+            margin: 100px auto;
+        }
+        .red{
+            background: #ff0000;
+            color: #fff
+        }
+        #content span{
+            float: right;;
+        }
+  
+    </style>
+</head>
+<body>
+    <!-- <div id="div3">
+        <span v-bind:title="message">鼠标悬停几秒钟查看此处动态绑定的提示信息！</span>
+    </div> -->
+    <div id="container">
+            <div id="nav">
+                <ul>
+                    <li >名称：<input type="text"  v-model="productName">
+                    价格：<input type="text"  v-model.number="yuan"> 
+                        <button @click="add(list)" type="submit">添加</button>
+                    </li>
+                    <li><input type="text" v-model="seachName">
+                        <button @click="seach(list)"> 查询</button>
+                    </li>
+                </ul>
+         </div>
+            <div>
+                <ul id="content">
+                    <li @click="toogle(sList,index)" v-for="(sList,index) in list" :class="{red: sList.isRed}">
+                            <input  @click.stop type="checkbox" :value="index" v-model="checkList"><button @click="cancel(list,index)">X</button>{{sList.name}}<span>{{sList.price}}</span>
+                    </li> 
+                    <h4><button @click="clear(list)" >删除选中</button>总价：{{count}} </h4> 
+                </ul>
+
+                
+            </div>
+    </div>
+  
+    <script src="./vue.js"></script>
+    <script>
+      new Vue({
+            el: '#container',
+            data: {
+                seachName:'',
+                productName:'',
+                yuan:null,
+                count:0,
+                checkList:[],
+                list:[{
+                     name:'衣服',
+                    price:22,
+                    isRed: false,
+                    },{
+                        name:'裤子',
+                        price:213,
+                        isRed: false,
+                   
+                    },{
+                        name:'裙子',
+                        price:211,
+                        isRed: false,
+                        
+                    }
+                ],
+            },
+            methods: {
+                toogle(sList,index){
+                    console.log(index);
+                    sList.isRed = !sList.isRed;
+                    sList.isSelected = !sList.isSelected;
+                    if(sList.isRed){
+                        this.count =  this.count + parseInt(sList.price);
+                        
+                    }else if(sList.isRed==false){
+                        this.count = this.count - parseInt(sList.price)
+                      
+                    }
+
+                    
+                },
+                cancel(list,index){
+                    console.log(list);
+                   list.splice(index,1);
+                    
+                },
+                add(list){
+                    let obj={};
+                    obj.name = this.productName;
+                    obj.price = this.yuan;
+                    list.push(obj);
+                },
+                seach(list){
+                   
+                    
+                   
+                },
+                clear(){
+                    console.log(this.list);
+                    this.list = this.list.filter((elem, index) => {
+                        if (!this.checkList.includes(index)) {
+                            return elem;
+                        }
+                    });
+                    this.checkList = [];
+                    
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>
