@@ -1,7 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlPlugin =require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const glob = require('glob');
+const PurifyCSSPlugin = require("purifycss-webpack");
 
 module.exports = {
     mode:'development',
@@ -19,10 +21,14 @@ module.exports = {
         rules:[
             {
                 test:/\.css$/,
-                // use:['style-loader','css-loader']
                 use:ExtractTextPlugin.extract({
                     fallback:"style-loader",
-                    use:"css-loader"
+                    use:[
+                        {
+                            loader:"css-loader",
+                            options:{importLoaders:1}
+                        },'postcss-loader'
+                    ]
                 })
             },{
                 test:/\.(png|jpg|gif)/,
@@ -37,7 +43,34 @@ module.exports = {
             {
                 test:/\.(html|html)$/i,
                 loader:'html-withimg-loader'
-            }
+            },{
+                test:/\.scss$/,
+                // use:[
+                //     {
+                //         loader:'style-loader'
+                //     },
+                //     {
+                //         loader:'css-loader'
+                //     },
+                //     {
+                //         loader:'sass-loader'
+                //     }
+                // ]
+                use:ExtractTextPlugin.extract({
+                    use:[
+                        {
+                            loader:"css-loader"
+                        },
+                        {
+                            loader:"sass-loader"
+                        }],fallback:"style-loader"
+                    }
+                )
+              
+       
+            },
+       
+      
         ]
     },
 
@@ -50,7 +83,7 @@ module.exports = {
                 hash:true,
                 template:'./src/index.html'
             }),
-            new ExtractTextPlugin("css/index.css")
+            new ExtractTextPlugin("css/index.css"),
             // ,
             // new HtmlPlugin({
             //     filename:'a.html',
@@ -72,6 +105,11 @@ module.exports = {
             //     hash:true,
             //     template:'./src/index2.html'
             // }),
+            new PurifyCSSPlugin({
+                paths:glob.sync(path.join(__dirname,'src/*.html')),
+            }),
+            new webpack.BannerPlugin('VingH所有')
+         
     ],
     devServer:{
         contentBase:path.resolve(__dirname,'dist'),

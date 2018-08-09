@@ -35,17 +35,17 @@
                 <ul>
                     <li >名称：<input type="text"  v-model="productName">
                     价格：<input type="text"  v-model.number="yuan"> 
-                        <button @click="add(list)">添加</button>
+                        <button @click="add(list)" type="submit">添加</button>
                     </li>
-                    <li><input type="text">
-                        <button> 查询</button>
+                    <li><input type="text" v-model="seachName">
+                        <button @click="seach()"> 查询</button>
                     </li>
                 </ul>
          </div>
             <div>
                 <ul id="content">
                     <li @click="toogle(sList,index)" v-for="(sList,index) in list" :class="{red: sList.isRed}">
-                            <input type="checkbox"  name="item"><button @click="cancel(list,index)">X</button>{{sList.name}}<span>{{sList.price}}</span>
+                            <input  @click.stop type="checkbox" :value="index" v-model="checkList"><button @click="cancel(list,index)">X</button>{{sList.name}}<span>{{sList.price}}</span>
                     </li> 
                     <h4><button @click="clear(list)" >删除选中</button>总价：{{count}} </h4> 
                 </ul>
@@ -59,9 +59,11 @@
       new Vue({
             el: '#container',
             data: {
+                seachName:'',
                 productName:'',
                 yuan:null,
                 count:0,
+                checkList:[],
                 list:[{
                      name:'衣服',
                     price:22,
@@ -70,13 +72,12 @@
                         name:'裤子',
                         price:213,
                         isRed: false,
-                        index:1
                    
                     },{
                         name:'裙子',
                         price:211,
                         isRed: false,
-                        index:2
+                        
                     }
                 ],
             },
@@ -87,9 +88,13 @@
                     sList.isSelected = !sList.isSelected;
                     if(sList.isRed){
                         this.count =  this.count + parseInt(sList.price);
+                        
                     }else if(sList.isRed==false){
                         this.count = this.count - parseInt(sList.price)
+                      
                     }
+
+                    
                 },
                 cancel(list,index){
                     console.log(list);
@@ -102,11 +107,25 @@
                     obj.price = this.yuan;
                     list.push(obj);
                 },
-                clear(list){
-                    console.log(list);
-                    for(let i in list.keys()){
-                       
-                    }
+                seach(){
+                   console.log(this);
+                    this.list = this.list.filter((elem,index)=>{
+                      if(elem.name == this.seachName){
+                          return elem;
+                      };
+                   })
+                    
+                   
+                },
+                clear(){
+                    console.log(this.list);
+                   this.list = this.list.filter((elem, index) => {
+                        if (!this.checkList.includes(index)) {
+                            return elem;
+                                
+                        }
+                    });
+                    this.checkList = [];
                     
                 }
             }

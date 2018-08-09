@@ -7,4 +7,9 @@
     height: 200px;
     background: #ff0036;
     background-image: url(../images/nike.png);
+    transform: translateX(-30deg)
+}
+
+.dddada{
+    background: #000;
 }
