@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="0808">
-      <change beforePath="$PROJECT_DIR$/webpack4/dist/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/webpack4/dist/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack4/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpack4/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack4/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack4/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack4/dist/index2.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack4/dist/index2.js" afterDir="false" />
+    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -164,7 +161,7 @@
       <workItem from="1533737933485" duration="697000" />
       <workItem from="1533771240517" duration="150000" />
       <workItem from="1533780603717" duration="330000" />
-      <workItem from="1533857791508" duration="314000" />
+      <workItem from="1533857791508" duration="469000" />
     </task>
     <task id="LOCAL-00001" summary="0801">
       <created>1533111829337</created>
@@ -222,19 +219,27 @@
       <option name="project" value="LOCAL" />
       <updated>1533857855750</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="0810">
+      <created>1533858259724</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533858259724</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13256000" />
+    <option name="totallyTimeSpent" value="13411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="23" width="1400" height="757" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49928573" weight="0.329429" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007143" side_tool="true" visible="true" weight="0.329429" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
