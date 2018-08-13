@@ -6,123 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        *{list-style: none;
-            margin:0px;
-            padding:0px;
+        .marskCover{
+            background:rgba(0, 0,0,0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
-        #container{
-            width: 400px;
-            height: 600px;
-            background: #fff;
-            margin: 100px auto;
-        }
-        .red{
-            background: #ff0000;
-            color: #fff
-        }
-        #content span{
-            float: right;;
-        }
-  
+    
     </style>
 </head>
 <body>
-    <!-- <div id="div3">
-        <span v-bind:title="message">鼠标悬停几秒钟查看此处动态绑定的提示信息！</span>
-    </div> -->
-    <div id="container">
-            <div id="nav">
-                <ul>
-                    <li><label for="name">名称</label>   
-                        <input type="usename" placeholder="ooo" id="name" v-model="addName">
-                        <label for="price">价格</label>
-                        <input type="use" placeholder="ooo" id="price" v-model="addPrice">
-                        <button @click="add">添加</button>
-                        <input type="text" v-model="seachName"><button @click="seach">查询</button>
-                    </li>
-                </ul>
-         </div>
-            <div>
-                <ul id="content">
-                    <li @click="toggle(sList)"  v-for = "(sList,index) in list" :class="sList.isRed?'red':'' ">
-                        <input type="checkbox" @click.stop  v-model="checkList" :value="index">{{sList.name}}<button @click="cancel(index)">X</button> <span>{{sList.price}}</span>
-                    </li>
-                    <button @click="delSelected">删除选中</button>总价：{{total}}
-          
-                </ul>
-              
+   <div id="app">
+ <button @click='isLogin= true'>注册</button>
+ <button @click='isRegist= true'>登入</button>
 
-                
+        <xx v-show='isLogin'  @close='isLogin=false'>
+            <span slot="title">登入</span>
+            <form action="" slot='content'>
+                <p>用户名</p>
+            </form>
+        </xx>
+        <xx v-show='isRegist'  @close='isRegist=false'>
+                <span slot="title">555</span>
+                <form action="" slot='content'>
+                    <p>用户名</p>
+                </form>
+            </xx>
+
+   
+   </div>
+
+   <template id="marsk">
+        <div class="marskCover">
+            <div class="marskBox">
+                <div class="markTitle">
+                    <div class="name"><slot name="title"></slot></div>
+                    <div class="close" @click="$emit('close')">[X]</div>
+                </div>
+                <div class="markContent"> 
+                    <slot name="content"></slot>
+                </div>
             </div>
-    </div>
-  
-    <script src="./vue.js"></script>
-    <script>
-        new Vue({
-            el:'#container',
-            data:{
-                checkList:[],
-                addName:'',
-                addPrice:null,
-                seachName:'',
-                list:[{
-                    name:'裤子',
-                    price:122,
-                    isRed:false
-                },{
-                    name:'裙子',
-                    price:144,
-                    isRed:false
-                },{
-                    name:'鞋子',
-                    price:142,
-                    isRed:false
-                }]
-            },
-            methods: {
-                toggle(sList){
-                    sList.isRed = !sList.isRed;
-                },
-                cancel(index){
-                    this.list.splice(index,1);
-                },
-                delSelected(){
-                    this.list = this.list.filter((elem,index)=>{
-                        if(!this.checkList.includes(index)){
-                            return elem;
-                        }
-                    });
-                    this.checkList=[];
-                },
-                add(){
-                    this.list.push({
-                        price:this.addPrice,
-                        name:this.addName,
-                        isRed:false       
-                   })
-                },
-                seach(){
-                   this.list =  this.list.filter((elem,index)=>{
-                        if(elem.name.includes(this.seachName)){
-                            return elem;
-                        }
-                    })
-                }
-                
-            },
-            computed: {
-                total(){
-                    let sum = 0;
-                    this.list.forEach(element => {
-                        if(element.isRed){
-                            sum += element.price;
-                        }
-                    }); return sum;
-                    
-                }
-            }
-        })
+        </div>
         
+    </template>
+
+
+    <script src="vue.js"> </script>
+    <script>
+     new Vue({
+         el:'#app',
+        data:{
+            isRegist:false,
+            isLogin:false
+        },
+         components: {
+             'xx':{
+                 template:'#marsk'
+             }
+                 
+            
+         }
+     })
+    
     </script>
 </body>
 </html>
