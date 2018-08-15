@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="">
+    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="0814">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -83,12 +83,15 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/vue-example-2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue-example/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue_shili/node_modules" />
     <handled-path value="$PROJECT_DIR$/vuecli-test/node_modules" />
     <handled-path value="$PROJECT_DIR$/webpack4/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="23" />
+    <option name="x" value="241" />
+    <option name="y" value="100" />
     <option name="width" value="1400" />
     <option name="height" value="757" />
   </component>
@@ -98,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,6 +117,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,6 +168,7 @@
       <workItem from="1533780603717" duration="330000" />
       <workItem from="1533857791508" duration="469000" />
       <workItem from="1533996204930" duration="110000" />
+      <workItem from="1534172093182" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="0801">
       <created>1533111829337</created>
@@ -243,11 +247,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533996278340</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="0814">
+      <created>1534172114289</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534172114289</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13521000" />
+    <option name="totallyTimeSpent" value="13570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="23" width="1400" height="757" extended-state="0" />
@@ -267,10 +278,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49928573" weight="0.329429" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49928573" weight="0.329429" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,9 +297,31 @@
     <MESSAGE value="0808" />
     <MESSAGE value="0810" />
     <MESSAGE value="0811" />
-    <option name="LAST_COMMIT_MESSAGE" value="0811" />
+    <MESSAGE value="0814" />
+    <option name="LAST_COMMIT_MESSAGE" value="0814" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/Starbucks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/解构.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
