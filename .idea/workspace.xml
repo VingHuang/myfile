@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="0814">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,8 +19,8 @@
           <file leaf-file-name="星巴克.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+                <state relative-caret-position="323">
+                  <caret line="52" column="15" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -84,8 +82,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/vue-example-2/node_modules" />
-    <handled-path value="$PROJECT_DIR$/vue-example/node_modules" />
-    <handled-path value="$PROJECT_DIR$/vue_shili/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue_app_shili/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue_app_shili的副本 2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue_app_shili的副本/node_modules" />
     <handled-path value="$PROJECT_DIR$/vuecli-test/node_modules" />
     <handled-path value="$PROJECT_DIR$/webpack4/node_modules" />
   </component>
@@ -101,6 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,7 +117,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,6 +168,7 @@
       <workItem from="1533857791508" duration="469000" />
       <workItem from="1533996204930" duration="110000" />
       <workItem from="1534172093182" duration="49000" />
+      <workItem from="1534336953834" duration="246000" />
     </task>
     <task id="LOCAL-00001" summary="0801">
       <created>1533111829337</created>
@@ -254,20 +254,34 @@
       <option name="project" value="LOCAL" />
       <updated>1534172114289</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="0815">
+      <created>1534337004468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534337004468</updated>
+    </task>
+    <task id="LOCAL-00014" summary="0815">
+      <created>1534337097182</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1534337097182</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13570000" />
+    <option name="totallyTimeSpent" value="13816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1400" height="757" extended-state="0" />
-    <editor active="true" />
+    <frame x="241" y="100" width="1400" height="757" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49857143" weight="0.329429" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007143" side_tool="true" visible="true" weight="0.329429" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50142854" side_tool="true" visible="true" weight="0.329429" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -278,7 +292,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49928573" weight="0.329429" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -298,9 +311,31 @@
     <MESSAGE value="0810" />
     <MESSAGE value="0811" />
     <MESSAGE value="0814" />
-    <option name="LAST_COMMIT_MESSAGE" value="0814" />
+    <MESSAGE value="0815" />
+    <option name="LAST_COMMIT_MESSAGE" value="0815" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/Starbucks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/解构.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -616,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/Starbucks.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -634,6 +662,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="15" />
         </state>
       </provider>
     </entry>
