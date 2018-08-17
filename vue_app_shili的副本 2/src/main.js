@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import VueTouch from 'vue-touch';
+Vue.use(VueTouch, {name: 'v-touch'})
 
 Vue.config.productionTip = false
 import '@/assets/css/reset.css'
