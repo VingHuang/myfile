@@ -49,9 +49,9 @@ export default {
         }
     },mounted() {
     window.onscroll = () => {
-      let scrollTop = document.documentElement.scrollTop;
-      let scrollHeight = document.documentElement.scrollHeight;
-      let clientHeight = document.documentElement.clientHeight;
+      let scrollTop = document.documentElement.scrollTop;//滚动条距离HTML 的高度
+      let scrollHeight = document.documentElement.scrollHeight; //总高度
+      let clientHeight = document.documentElement.clientHeight; //当前页面高度
     //   console.log(scrollHeight, scrollTop, clientHeight);
       if (scrollHeight == scrollTop + clientHeight && !this.isEnd) {
         // 请求数据
