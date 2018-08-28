@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practice-vue" beforeDir="false" afterPath="$PROJECT_DIR$/practice-vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -104,6 +103,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,22 +111,10 @@
               <item name="myfile" type="b2602c69:ProjectViewProjectNode" />
               <item name="myfile" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="myfile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myfile" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myfile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myfile" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-vue" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,6 +172,7 @@
       <workItem from="1534770143387" duration="11000" />
       <workItem from="1534860591178" duration="76000" />
       <workItem from="1534946249914" duration="187000" />
+      <workItem from="1534946733738" duration="185000" />
     </task>
     <task id="LOCAL-00001" summary="0801">
       <created>1533111829337</created>
@@ -311,11 +300,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534946405567</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="0822">
+      <created>1534946759384</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1534946759384</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14741000" />
+    <option name="totallyTimeSpent" value="14926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="59" width="1400" height="757" extended-state="0" />
@@ -324,12 +320,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50142854" side_tool="true" visible="true" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

@@ -2,55 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <style>
         *{
-            margin: 0;
-            padding: 0;
             list-style: none;
         }
-        #container {
+        .cotain {
             width: 100%;
-            height: 500px;
+            height: 600px;
             position: relative;
         }
-        #img-content{
-            height: 100%;
-        }
-        #img-content div{
+        .cotain div{
             text-align: center;
             position: absolute;
-            width: 100%;
-            opacity: 0;
             transition: all 1s ease;
+            opacity: 0;
+            height: 600px;
+            width: 100%;
+            background-position-y: -160px;
+            overflow: hidden;
+            background-size:cover;   
         }
-        .banner1{
-            background-color: #e8e8e8;
-
+        .slide1{     
+            background: url('./bg-2.jpg');            
         }
-        .banner2{
-            background-color: #1d3cbc;
-
+        .slide2{          
+            background: url('./bg-3.jpg');
         }
-        .banner3{
-            background-color: #e1363c;
-
+        .slide3{
+            background: url('./bg1.jpg');
         }
-
-        #img-content .img-selected{
+        .cotain .img-selected{
             opacity: 1;
             z-index: 1;
         }
 
-
-        #nav{
+        .slide-list{
             position: absolute;
             bottom: 6%;
             right: 45%;
             z-index: 999;
-
         }
-        #nav li{
+        .slide-list li{
             width: 25px;
             height: 5px;
             margin-right: 20px;
@@ -59,40 +54,29 @@
             opacity: .3;
             cursor: pointer;
         }
-        #nav .selected{
+        .slide-list .selected{
             background-color: #FF0036;
             opacity: .6;
         }
-
     </style>
-    
 </head>
 <body>
-    <div id="container">
-        <div id="img-content">
-            <div class="banner1 img-selected">
-                <img src="https://img.alicdn.com/simba/img/TB1xIQMvH5YBuNjSspoSuveNFXa.jpg" alt="">
-            </div>
-            <div class="banner2">
-                <img src="http://img.alicdn.com/imgextra/i1/114/TB2wYu7c8cXBuNjt_XoXXXIwFXa_!!114-0-luban.jpg_q100.jpg_.webp" alt="">
-            </div>
-            <div class="banner3">
-                <img src="http://img.alicdn.com/tps/i4/TB17ITUFuuSBuNjSsplSuve8pXa.jpg" alt="">
-            </div>
-        </div>
-
-        <ul id="nav" >
-            <li class="selected"></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <div class="cotain" id="container">
+        <div class="slide1 img-selected"></div>
+        <div class="slide2 "></div>
+        <div class="slide3"></div>
+        <ul class="slide-list" id="nav">
+                <li class="selected"></li>
+                <li></li>
+                <li></li>
+            </ul>
     </div>
-
-
+  
+</body>
     <script>
         var oNav = document.getElementById("nav");
         var aLi = oNav.getElementsByTagName("li");
-        var oImg = document.getElementById("img-content");
+        var oImg = document.querySelector(".cotain");
         var aImg = oImg.getElementsByTagName("div");
         var oContainer = document.getElementById("container");
         var iNowIndex = 0;
@@ -119,7 +103,7 @@
         function changeImg() {
             for(var j=0; j<aLi.length; j++){
                 aLi[j].className = '';
-                aImg[j].className = 'banner' + (j + 1);
+                aImg[j].className = 'slide' + (j + 1);
             }
             aLi[iNowIndex].className = 'selected';
             aImg[iNowIndex].className += ' img-selected ';
@@ -140,8 +124,6 @@
                 foo();
             }, 1000);
         }
-
-
     </script>
-</body>
+
 </html>
