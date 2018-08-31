@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51045202-a3a7-41ba-b5dd-c4a8f9d479f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practice-vue" beforeDir="false" afterPath="$PROJECT_DIR$/practice-vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -112,11 +111,6 @@
               <item name="myfile" type="b2602c69:ProjectViewProjectNode" />
               <item name="myfile" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="myfile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myfile" type="462c0819:PsiDirectoryNode" />
-              <item name="正则表达式" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -181,6 +175,7 @@
       <workItem from="1534946733738" duration="185000" />
       <workItem from="1535467964625" duration="367000" />
       <workItem from="1535507212594" duration="323000" />
+      <workItem from="1535613583230" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="0801">
       <created>1533111829337</created>
@@ -322,11 +317,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535468001941</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="0830">
+      <created>1535613624802</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535613624802</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15616000" />
+    <option name="totallyTimeSpent" value="15691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="59" width="1400" height="757" extended-state="0" />
@@ -369,7 +371,8 @@
     <MESSAGE value="0816" />
     <MESSAGE value="0817" />
     <MESSAGE value="0822" />
-    <option name="LAST_COMMIT_MESSAGE" value="0822" />
+    <MESSAGE value="0830" />
+    <option name="LAST_COMMIT_MESSAGE" value="0830" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tmall/移动端开发--响应式布局/星巴克.html">
